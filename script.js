@@ -1,4 +1,4 @@
-// Assignment Code
+// Defines the generate button.
 var generateBtn = document.querySelector("#generate");
 
 
@@ -22,7 +22,6 @@ $(document).ready(function() {
     $valueSpan.html($value.val());
   });
 });
-
 
 
 
@@ -73,11 +72,12 @@ function generatePassword() {
 
   // Password generation using random math.
   for (var i=0; i < passLength; i++) {
-    genPass = genPass+finalArray[Math.floor(Math.random() * finalArray.length)];
+    genPass = genPass + finalArray[Math.floor(Math.random() * finalArray.length)];
   }
 };
 
-// Inputs password into text area.
+
+// Clears the password area, then inputs password into text area.
 function writePassword() {
   genPass = "";
   generatePassword();
@@ -85,5 +85,5 @@ function writePassword() {
 };
 
 
-// Add event listener to generate button
+// Adds event listener to generate button
 generateBtn.addEventListener("click", writePassword);

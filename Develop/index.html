@@ -26,16 +26,43 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <label "slider">Password Length</label>
+        <h4>Password Length:</h4>
         <div class="d-flex justify-content-center my-4">
           <form class="range-field w-75">
-            <input id="slider11" type="range" min="8" max="128" />
+            <input id="slider11" name="slider" type="range" min="8" max="128" />
           </form>
-          <span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"></span>
+          <span class="font-weight-bold text-primary ml-2 mt-1 valueSpan" id="slidervalue"></span>
         </div>
-        <section class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </section>
+        <div>
+          <h4>Password shall include:</h3>
+          <section class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="upperCheck">
+            <label class="form-check-label" for="upperCheck">
+              Uppercase Characters
+            </label>
+          </section>
+          <section class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lowerCheck">
+            <label class="form-check-label" for="lowerCheck">
+              Lowercase Characters
+            </label>
+          </section>
+          <section class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="numberCheck">
+            <label class="form-check-label" for="numberCheck">
+              Numbers
+            </label>
+          </section>
+          <section class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="symbolCheck">
+            <label class="form-check-label" for="symbolCheck">
+              Special Symbols
+            </label>
+          </section>
+          <section class="card-footer">
+            <button id="generate" class="btn">Generate Password</button>
+          </section>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

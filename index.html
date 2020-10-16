@@ -19,6 +19,7 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        <!-- Password output here -->
         <div class="card-body">
           <textarea
             readonly
@@ -28,12 +29,15 @@
           ></textarea>
         </div>
         <h4>Password Length:</h4>
+        <!-- Slider for Password Length -->
         <div class="d-flex justify-content-center my-4">
           <form class="range-field w-75">
             <input id="slider11" name="slider" type="range" min="8" max="128" />
           </form>
+          <!-- Text showing slider value -->
           <span class="font-weight-bold text-primary ml-2 mt-1 valueSpan" id="slidervalue"></span>
         </div>
+        <!-- Password Generation Options -->
         <div>
           <h4>Password shall include:</h3>
           <section class="form-check">
@@ -60,6 +64,7 @@
               Special Symbols
             </label>
           </section>
+          <!-- Generate Password Button -->
           <section class="card-footer">
             <button id="generate" class="btn">Generate Password</button>
           </section>
